@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="3" verbose="1" name="Capstone Automation Test Suite" annotations="JDK" parallel="tests">
+         
+  <test name="Selenium">
+	 <classes>
+	   <class name="SeleniumUIAutomationTestSuite.SeleniumTest"/>
+	 </classes>
+   </test>
+   
+  <test name="Appium">
+     <classes>
+       <class name="MobileAppAutomationTestSuite.AppiumDriverBase"/>
+     </classes>
+   </test>
+   <test name="API Automation">
+     <classes>
+       <class name="WebAPIAutomationTestSuite.APITestBase"/>
+     </classes>
+   </test>
+</suite>
